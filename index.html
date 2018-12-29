@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CARTOONS</title>
+  <script type="text/javascript" src="js/knockout-3.2.0.js"></script>
+  <style type="text/css">
+    .cartoons {
+      text-align: center;
+    }
+    .cartoons div {
+      display: inline-block;
+      margin: 5px;
+      vertical-align: middle;
+    }
+    .cartoons img {
+      width: 290px;
+      border: 5px solid transparent;
+      border-radius: 20px;
+    }
+    .cartoons img:hover {
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cartoons" data-bind="foreach: $root">
+  <div>
+    <a target="_blank" data-bind="attr: { 'href': 'https://www.youtube.com/results?search_query=' + name }">
+      <img data-bind="attr: { 'src': 'img/' + image }" />
+    </a>
+  </div>
+</div>
+
+<script>
+  ko.applyBindings([
+    { name: "Фиксики", image: "fixiki.jpg" },
+    { name: "Барбоскины", image: "barbos.jpg" },
+    { name: "Робокар Поли", image: "robocar.jpg" },
+    { name: "Маша и Медведь", image: "masha.jpg" },
+    { name: "Свинка Пеппа", image: "peppa.jpg" },
+    { name: "Супер Том и грамотеи", image: "supertom.jpg" },
+    { name: "Робот Робик", image: "robik.jpg" },
+    { name: "СамСам", image: "samsam.jpg" },
+    { name: "Озорная семейка мультфильм", image: "semeyka.jpg" },
+    { name: "Пузыри (Баблс) мультфильм", image: "bubbles.jpg" },
+    { name: "Метеор и крутые тачки мультфильм", image: "meteor.jpg" },
+    { name: "Джейк и пираты Нетландии", image: "jake.jpg" },
+    { name: "Котики, вперед!", image: "kotiki.jpg" },
+    { name: "Летающие звери мультфильм", image: "zveri.jpg" },
+    { name: "София Прекрасная Sofia The First", image: "sofia.jpg" },
+    { name: "Куми-Куми мультфильм", image: "qumi-qumi.jpg" },
+    { name: "Баранчик Шон", image: "shawnsheep.jpg" },
+    { name: "Паровозик Тишка", image: "tishka.jpg" },
+    { name: "Щенячий патруль мультфильм Paw Patrol", image: "pawpatrol.jpg" },
+    { name: "Врумиз мультфильм Vroomiz", image: "vroomiz.jpg" },
+    { name: "Смешарики 2D", image: "smesh2d.jpg" },
+    { name: "Mickey Mouse Clubhouse Full Episodes Compilation", image: "mickeymouse.jpg" },
+    { name: "Пингвиненок Пороро", image: "pororo.jpg" },
+    { name: "Томас и его друзья", image: "tomas.jpg" },
+    { name: "Тротро", image: "trotro.jpg" },
+    { name: "Лунтик", image: "luntik.jpg" },
+    { name: "Мусти", image: "musti.jpg" },
+    { name: "Городские герои", image: "heroes.jpg" },
+    { name: "Зигби знает все", image: "zigby.jpg" },
+    { name: "Покойо", image: "pokoyo.jpg" },
+    { name: "Пригоди Чака та друзів мультфільм", image: "chuck.jpg" },
+    { name: "Пчелиные истории", image: "thehive.jpg" },
+    { name: "Umizoomi full episodes", image: "umizoomi.jpg" },
+    { name: "Octonauts", image: "octonauts.jpg" },
+    { name: "Tayo, The Bus", image: "tayo.png" },
+    { name: "Приключения говорящих автобусов", image: "pga.jpg" },
+    { name: "Лило и Стич", image: "liloistich.jpg" },
+    { name: "Сол и Лу", image: "solilu.jpg" },
+    { name: "Bob, The Train", image: "bobthetrain.jpg" },
+    { name: "Капуки Кануки", image: "kapukikanuki.jpg" },
+    { name: "TuTiTu", image: "tutitu.jpg" },
+    { name: "Развивающие мультики про машинки", image: "promashinki.jpg" },
+    { name: "Nursery Rhymes Collection", image: "nrc.jpg" }
+  ]);
+</script>
+
+</body>
+</html>
